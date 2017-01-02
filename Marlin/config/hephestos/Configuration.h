@@ -60,7 +60,7 @@
 // #define PS_DEFAULT_OFF
 
 // Define this to have hotbed support
-//#define HEATED_BED_SUPPORT
+#define HEATED_BED_SUPPORT
 
 // The following define selects the stepper profile to use, if enabled printer noise will increase
 // #define PREFER_MAX_SPEED
@@ -111,7 +111,7 @@
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT
