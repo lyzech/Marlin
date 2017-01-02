@@ -468,19 +468,19 @@ const bool Z_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the logic 
  * MOVEMENT SETTINGS
  */
 
-#define HOMING_FEEDRATE {2000, 2000, 150, 0} // set the homing speeds (mm/min)
-#define HOMING_SLOW_FEEDRATE {2000, 2000, 150, 0} 
+#define HOMING_FEEDRATE {2000, 2000, 400, 0} // set the homing speeds (mm/min)
+#define HOMING_SLOW_FEEDRATE {1000, 1000, 100, 0} 
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 4000,100.47095761381482}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 400,100.47095761381482}  // default steps per unit for Ultimaker
 #define DEFAULT_MAX_ACCELERATION      {1100,1100,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #ifndef PREFER_MAX_SPEED
-	#define DEFAULT_MAX_FEEDRATE          {85, 85, 3.3, 25}    // (mm/sec)
+	#define DEFAULT_MAX_FEEDRATE          {85, 85, 30, 25}    // (mm/sec)
 #else
-	#define DEFAULT_MAX_FEEDRATE          {200, 200, 3.3, 25}    // (mm/sec)
+	#define DEFAULT_MAX_FEEDRATE          {200, 200, 30, 25}    // (mm/sec)
 #endif // PREFER_MAX_SPEED
 
 #define DEFAULT_ACCELERATION          650     // X, Y, Z and E acceleration in mm/s^2 for printing moves
